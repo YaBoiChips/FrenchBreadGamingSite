@@ -180,3 +180,13 @@ footer {
 @media(max-width:560px) {
   .staff-grid { grid-template-columns:1fr; }
 }
+.past-events-container{position:relative;overflow:hidden}
+.past-events-track{display:flex;gap:24px;overflow-x:auto;scroll-behavior:smooth;padding:12px 8px}
+.past-event{min-width:260px;background:linear-gradient(180deg,rgba(255,255,255,0.015),rgba(0,0,0,0.03));border:1px solid rgba(255,255,255,0.02);border-radius:14px;padding:14px;text-align:center}
+.past-event img{height:120px;width:auto;max-width:100%;border-radius:10px}
+.past-event .name{font-weight:800;margin-bottom:6px}
+.past-event .meta{color:var(--muted);font-size:12px;margin-top:6px}
+.past-arrow{position:absolute;top:50%;transform:translateY(-50%);background:rgba(0,0,0,0.6);border:1px solid rgba(255,255,255,0.08);color:#fff;width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer}
+.past-arrow.left{left:6px}
+.past-arrow.right{right:6px}
+.past-arrow:hover{background:rgba(255,255,255,0.08)}
